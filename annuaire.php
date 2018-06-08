@@ -21,7 +21,7 @@ while($result=$cpt->fetch()){
 }
 while ($city=$ville->fetch()) {
 	echo '<p>Nom user= ' . $city['nom']. " " . "ville= " . $city['ville'] ;
-	# code...
+
 }
 
  ?>
