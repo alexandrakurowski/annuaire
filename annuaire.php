@@ -23,5 +23,7 @@ while ($city=$ville->fetch()) {
 	echo '<p>Nom user= ' . $city['nom']. " " . "ville= " . $city['ville'] ;
 
 }
-
+$oce = $bdd->query('UPDATE contacts SET email = "ogatien@simplon.co" WHERE id = 18') ;
+$sup = $bdd->query('DELETE FROM appartenir WHERE fk_contact = 1 ');
+$suporel = $bdd->query('DELETE FROM contacts WHERE id = 1') ;
  ?>
